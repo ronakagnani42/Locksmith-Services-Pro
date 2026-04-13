@@ -85,9 +85,9 @@ export default function Home() {
           style={{ y: videoY }}
         >
           <video
-            className="absolute inset-0 w-full h-full object-cover scale-105"
-            https://res.cloudinary.com/dningndxk/video/upload/v1776116034/hero_k5tgkd.mp4
-            autoPlay
+          className="absolute inset-0 w-full h-full object-cover scale-105"
+          src="https://res.cloudinary.com/dningndxk/video/upload/v1776116034/hero_k5tgkd.mp4"
+          autoPlay
             muted
             loop
             playsInline
