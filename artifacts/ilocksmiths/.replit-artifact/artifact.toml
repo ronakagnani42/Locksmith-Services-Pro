@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "iLocksmiths Website"
+version = "1.0.0"
+id = "artifacts/ilocksmiths"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22370
+
+[services.development]
+run = "pnpm --filter @workspace/ilocksmiths run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ilocksmiths", "run", "build" ]
+publicDir = "artifacts/ilocksmiths/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22370"
+BASE_PATH = "/"

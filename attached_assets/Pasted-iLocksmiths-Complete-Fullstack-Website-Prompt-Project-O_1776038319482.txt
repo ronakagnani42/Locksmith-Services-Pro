@@ -1,0 +1,445 @@
+iLocksmiths - Complete Fullstack Website Prompt
+Project Overview
+Build a professional, conversion-optimized locksmith website for iLocksmiths, a 24/7 emergency locksmith service operating in London, UK. The website should have a dark minimalist design inspired by CRED, with cinematic video backgrounds, sophisticated animations, and a focus on trust and conversion.
+
+Business Information
+Business Name: iLocksmiths (lowercase 'i')
+Phone: +44 7340 041444 (UK format: 07340 041444)
+Email: sales@ilocksmiths.uk
+Location: London, United Kingdom
+Service: 24/7 Emergency Locksmith Services
+Coverage: All London boroughs and surrounding areas
+WhatsApp: 447340041444
+Tech Stack
+Frontend
+React 19.0.0
+React Router DOM 7.5.1
+Tailwind CSS 3.4.17
+Shadcn/UI (Radix UI components)
+Framer Motion 12.38.0 (animations)
+Lucide React 0.507.0 (icons)
+Sonner 2.0.3 (toast notifications)
+Axios 1.8.4
+Backend
+FastAPI
+MongoDB (Motor async driver)
+Python 3.x
+Environment
+Frontend: React dev server on port 3000
+Backend: FastAPI on port 8001
+MongoDB: Local instance
+Design Requirements
+Design Style
+Theme: Dark minimalist (CRED-inspired)
+Color Palette:
+Primary: zinc-950, zinc-900, zinc-800 (dark grays)
+Accents: White, subtle gradients
+Avoid: Purple/pink gradients (prohibited)
+Typography: System fonts, large bold headings
+Spacing: Generous whitespace (2-3x normal)
+Borders: Rounded (lg, xl, 2xl, 3xl)
+Key Design Principles
+No dark purple/pink gradients
+Use only Lucide React icons (no emojis)
+Glass-morphism effects (backdrop-blur)
+Smooth animations and transitions
+High contrast for readability
+Mobile-first responsive design
+Website Structure
+Pages (Multi-page site)
+1. Home Page (/)
+Sections:
+
+Hero Section (Full-screen)
+
+Video background (desktop/tablet): Cinematic locksmith video, autoplay, muted, loop
+Static dark gradient (mobile): For performance
+Content overlay:
+24/7 badge
+Large headline: "London's Trusted Locksmith Service"
+Value proposition
+CTA buttons: Call + WhatsApp
+Trust badges: DBS Checked, Fully Insured, 5-Star Rated
+Stats Section
+
+4 stats: 30 mins response, 500+ customers, 95% satisfaction, 24/7 service
+Scale-in animations on scroll
+Services Section
+
+4 service cards in 2x2 grid
+Each card: Icon, title, description, pricing, "Learn more" link
+Hover lift animation (-8px)
+Services:
+24/7 Emergency Lockouts (£59)
+Lock Repairs & Replacements (£69)
+UPVC & Composite Door Specialists (£79)
+Security Upgrades (£89)
+Testimonials Section
+
+4 customer testimonials in 2x2 grid
+Each: 5-star rating, quote, customer photo, name, role
+Fade-in animations
+FAQ Section
+
+Accordion component (Shadcn)
+6 common questions
+Sequential reveal animation
+CTA Section
+
+Gradient background card
+"Need Help Now?" heading
+Call + WhatsApp buttons
+Scale-in with hover effect
+2. Services Page (/services)
+Overview of all services
+Alternating left/right layout for each service
+Service icon, title, description, features list
+Pricing information
+"Not Sure?" CTA section
+3. Service Detail Pages (/services/:slug)
+Individual pages for each service
+Large icon and title
+Full description
+Features grid (checkmarks)
+Pricing card with CTAs
+"How It Works" process (4 steps)
+CTA section
+4. Pricing Page (/pricing)
+3 pricing tiers (cards)
+Most popular highlighted
+Feature lists
+"What's Included" section (8 items)
+Pricing FAQs (4 questions)
+Custom quote CTA
+5. About Page (/about)
+Company story
+"Why Choose Us" (4 value props with icons):
+Trusted & Secure
+Fast Response
+Expert Service
+Customer Focused
+Coverage areas (32 London boroughs in grid)
+Certifications (DBS, Insured, BS3621)
+CTA section
+6. Contact Page (/contact)
+Left: Contact information cards
+Phone (with call link)
+WhatsApp (with click handler)
+Email
+Service area
+Right: Quote request form
+Fields: Name, Phone, Email, Service dropdown, Message, Contact preference
+Toast notification on submit
+Form validation
+Components
+Layout Components
+Header
+Fixed navigation bar
+Logo (keyhole icon) + "iLocksmiths" text
+Navigation: Home, Services, Pricing, About, Contact
+CTA buttons: WhatsApp + Call
+Mobile hamburger menu
+Scroll effect: background blur on scroll
+Footer
+4 columns:
+Company info + social links
+Quick links
+Services links
+Contact information
+Bottom bar: Copyright + Privacy/Terms links
+WhatsApp Floating Button
+Shows after scrolling 300px
+Green circular button with pulse animation
+Tooltip appears after 3 seconds
+Opens WhatsApp with pre-filled message
+Animations & Interactions
+Framer Motion Animations
+Fade-in-up: Elements enter from bottom with opacity (hero text, headings)
+Stagger container: Children animate sequentially
+Scale-in: Elements scale from 0.8 to 1 (stats, CTA)
+Hover effects:
+Service cards: lift -8px
+Stat cards: scale 1.05
+CTA section: scale 1.02
+Viewport triggers: Animations activate when scrolling into view
+Smooth scroll: Custom scrollbar, scroll-padding-top: 80px
+Transition Properties
+Duration: 200-800ms
+Easing: ease-in-out
+Properties: background-color, border-color, color, transform, box-shadow
+Features & Functionality
+Frontend Features
+Video Background
+
+Desktop/Tablet: Full-screen video, autoplay, muted, loop
+Mobile: Static gradient (performance optimization)
+Dark overlay gradient for text readability
+WhatsApp Integration
+
+Floating button
+Header/Footer CTAs
+Pre-filled messages with service context
+Contact Form
+
+Client-side validation
+Toast notifications
+Service dropdown
+Contact preference selection
+Responsive Design
+
+Mobile: < 768px
+Tablet: 768px - 1024px
+Desktop: > 1024px
+Accessibility
+
+ARIA labels
+Keyboard navigation
+Focus states
+Alt text for images
+Backend Features (To Be Built)
+Contact Form API
+
+POST /api/contact
+Email notifications
+MongoDB storage
+Inquiry Management
+
+GET /api/inquiries
+Admin dashboard
+Mock Data Structure
+Services
+{
+  id: "emergency-lockout",
+  title: "24/7 Emergency Lockouts",
+  slug: "emergency-lockout",
+  icon: "Clock", // Lucide icon name
+  shortDescription: "...",
+  description: "...",
+  features: ["feature1", "feature2", ...],
+  priceFrom: "£59"
+}
+Testimonials
+{
+  id: 1,
+  name: "Sarah Mitchell",
+  role: "Homeowner, Camden",
+  rating: 5,
+  text: "...",
+  image: "https://..."
+}
+FAQs
+{
+  question: "...",
+  answer: "..."
+}
+Stats
+{
+  value: "30",
+  label: "Average Response Time (mins)",
+  suffix: "mins"
+}
+File Structure
+/app/
+├── frontend/
+│   ├── public/
+│   │   ├── videos/
+│   │   │   └── intro.mp4 (cinematic locksmith video)
+│   │   └── logo.png (keyhole icon, white)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Layout/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── WhatsAppButton.jsx
+│   │   │   └── ui/ (Shadcn components)
+│   │   │       ├── accordion.jsx
+│   │   │       ├── button.jsx
+│   │   │       ├── card.jsx
+│   │   │       ├── dialog.jsx
+│   │   │       ├── input.jsx
+│   │   │       ├── select.jsx
+│   │   │       ├── textarea.jsx
+│   │   │       ├── toast.jsx
+│   │   │       └── sonner.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Services.jsx
+│   │   │   ├── ServiceDetail.jsx
+│   │   │   ├── Pricing.jsx
+│   │   │   ├── About.jsx
+│   │   │   └── Contact.jsx
+│   │   ├── data/
+│   │   │   └── mock.js (all mock data)
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── package.json
+│   └── tailwind.config.js
+├── backend/
+│   ├── server.py
+│   ├── requirements.txt
+│   └── .env
+└── memory/
+    ├── PRD.md
+    └── test_credentials.md
+Styling Guidelines
+CSS Custom Properties (index.css)
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  /* ... other CSS variables */
+}
+Tailwind Classes
+Backgrounds: bg-zinc-950, bg-zinc-900, bg-zinc-800
+Text: text-white, text-zinc-300, text-zinc-400
+Borders: border-zinc-800, border-zinc-700
+Rounded: rounded-lg, rounded-xl, rounded-2xl, rounded-3xl
+Spacing: Generous padding/margins
+Hover: hover:bg-zinc-700, hover:scale-105
+Animation Variants (Framer Motion)
+const fadeInUp = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2 }
+  }
+};
+Key Implementation Notes
+1. Video Background
+Use HTML5 <video> element
+Attributes: autoPlay, muted, loop, playsInline
+Desktop: Show video
+Mobile: hidden md:block (hide on mobile)
+Overlay: bg-gradient-to-r from-black/70 via-black/50 to-transparent
+2. Framer Motion Usage
+<motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, margin: "-100px" }}
+  variants={fadeInUp}
+  transition={{ duration: 0.6 }}
+>
+  Content
+</motion.div>
+3. WhatsApp Integration
+const handleWhatsApp = () => {
+  const message = encodeURIComponent("Hi, I need help with...");
+  window.open(`https://wa.me/${businessInfo.whatsapp}?text=${message}`, '_blank');
+};
+4. Responsive Video
+{/* Desktop/Tablet - Video */}
+<div className="hidden md:block">
+  <video>...</video>
+</div>
+
+{/* Mobile - Static Background */}
+<div className="md:hidden bg-gradient-to-br from-zinc-900 to-black"></div>
+5. Custom Scrollbar (index.css)
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #18181b; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 5px; }
+Content Guidelines
+Tone & Voice
+Professional but approachable
+Trust-building language
+Clear, concise messaging
+Emergency/urgency awareness
+Transparency focus (no hidden fees)
+Key Messages
+24/7 availability
+30-minute response time
+No call-out fees
+Upfront pricing
+DBS-checked professionals
+Fully insured
+All London coverage
+Call-to-Actions
+"Call 07340 041444"
+"Message on WhatsApp"
+"Get Help Now"
+"Request a Quote"
+"Learn More"
+Performance Optimizations
+Video
+
+Desktop only (not mobile)
+Preload metadata only
+Compressed to ~60MB max
+Images
+
+Use Unsplash URLs (already optimized)
+Lazy loading where appropriate
+Code
+
+Code splitting with React Router
+Tree shaking
+Minification in production
+Animations
+
+Use viewport={{ once: true }} to prevent re-animation
+GPU-accelerated transforms
+Next Steps / Roadmap
+P0 (Critical)
+Backend API development
+Contact form submission endpoint
+Email notifications
+MongoDB integration
+P1 (High Priority)
+Analytics integration (Google Analytics)
+SEO optimization (meta tags, schema markup)
+Admin dashboard for inquiries
+P2 (Nice to Have)
+Blog section
+Before/after gallery
+Service area map
+Live chat integration
+CMS for content management
+Testing Requirements
+Responsive Testing
+
+Test on mobile (375px), tablet (768px), desktop (1920px)
+Verify video shows/hides correctly
+Check navigation on all devices
+Animation Testing
+
+Scroll through page to verify all animations trigger
+Test hover effects
+Verify smooth scrolling
+Form Testing
+
+Submit contact form
+Verify validation
+Check toast notifications
+Link Testing
+
+All navigation links
+WhatsApp links
+Phone links
+Service detail pages
+Deployment Notes
+Frontend: Port 3000
+Backend: Port 8001
+Environment variables in .env files (never commit)
+Use REACT_APP_BACKEND_URL for API calls
+Supervisor for process management
+Additional Requirements
+Logo: White keyhole/arch icon on transparent background
+Video: Cinematic locksmith scenes, ~60MB, MP4 format
+Icons: All from Lucide React library
+Fonts: System fonts (no custom fonts)
+No Emojis: Use icons instead
+Success Metrics
+Design Quality: Matches $20k+ agency websites
+Performance: Fast load times (<3s), smooth animations
+Conversion: Clear CTAs, easy contact methods
+Trust: Professional appearance, credentials visible
+Mobile: Perfect responsive experience
+Final Notes
+This website should feel premium, trustworthy, and professional. The dark minimalist design combined with cinematic video and sophisticated animations creates a high-end feel that builds immediate trust. Every element should serve the goal of converting visitors into customers through clear messaging, easy contact methods, and a seamless user experience.
+
+The animations should be subtle but impactful - not overwhelming but enough to show this is a modern, professional business. The focus is on clarity, trust, and conversion.
