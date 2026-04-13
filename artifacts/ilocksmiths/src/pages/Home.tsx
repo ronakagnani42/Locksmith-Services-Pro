@@ -86,7 +86,7 @@ export default function Home() {
         >
           <video
             className="absolute inset-0 w-full h-full object-cover scale-105"
-            src="/hero.mp4"
+            https://res.cloudinary.com/dningndxk/video/upload/v1776116034/hero_k5tgkd.mp4
             autoPlay
             muted
             loop
