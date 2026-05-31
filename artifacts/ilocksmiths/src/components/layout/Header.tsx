@@ -25,13 +25,12 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5 group">
+        <Link href="/" className="flex items-center group">
           <img
-            src="/logo.png"
+            src="/ilocksmithswhite.png"
             alt="iLocksmiths"
-            className="h-8 w-auto group-hover:opacity-80 transition-opacity duration-200"
+            className="h-9 w-auto group-hover:opacity-80 transition-opacity duration-200"
           />
-          <span className="text-xl font-bold tracking-tight text-white">iLocksmiths</span>
         </Link>
 
         {/* Desktop Nav */}
