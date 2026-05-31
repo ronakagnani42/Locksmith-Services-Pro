@@ -8,11 +8,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1 */}
           <div>
-            <Link href="/" className="flex items-center mb-6">
+            <Link href="/" className="flex justify-center mb-6">
               <img
                 src="/ilocksmithswhite.png"
                 alt="iLocksmiths"
-                className="h-8 w-auto opacity-90 hover:opacity-100 transition-opacity duration-200"
+                className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity duration-200"
               />
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed mb-6">
