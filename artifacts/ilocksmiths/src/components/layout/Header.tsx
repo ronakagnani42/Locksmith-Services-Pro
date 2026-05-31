@@ -29,7 +29,7 @@ export function Header() {
           <img
             src="/ilocksmithswhite.png"
             alt="iLocksmiths"
-            className="h-9 w-auto group-hover:opacity-80 transition-opacity duration-200"
+            className="h-12 w-auto group-hover:opacity-80 transition-opacity duration-200"
           />
         </Link>
 
