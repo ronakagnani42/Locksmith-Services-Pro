@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { KeyRound, Phone, Mail, MessageSquare, MapPin } from "lucide-react";
+import { Phone, Mail, MessageSquare, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,9 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1 */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-6">
-              <KeyRound className="h-6 w-6 text-white" />
-              <span className="text-xl font-bold tracking-tight text-white">iLocksmiths</span>
+            <Link href="/" className="flex items-center mb-6">
+              <img
+                src="/ilocksmithswhite.png"
+                alt="iLocksmiths"
+                className="h-8 w-auto opacity-90 hover:opacity-100 transition-opacity duration-200"
+              />
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed mb-6">
               Premium 24/7 emergency locksmith services across London. Fast, reliable, and professional security solutions when you need them most.
