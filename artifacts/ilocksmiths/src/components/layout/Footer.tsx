@@ -48,11 +48,11 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-zinc-400">
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-zinc-300 shrink-0" />
-                <a href="tel:+447340041444" className="hover:text-white transition-colors">07340 041444</a>
+                <a href="tel:+443300545911" className="hover:text-white transition-colors">0330 054 5911</a>
               </li>
               <li className="flex items-start gap-3">
                 <MessageSquare className="h-5 w-5 text-zinc-300 shrink-0" />
-                <a href="https://wa.me/447340041444" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp Us</a>
+                <a href="https://wa.me/443300545911" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp Us</a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-zinc-300 shrink-0" />
