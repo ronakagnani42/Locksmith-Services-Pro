@@ -48,16 +48,16 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="tel:+447340041444">
+          <a href="tel:+443300545911">
             <Button
               variant="ghost"
               className="text-zinc-300 hover:text-white hover:bg-white/5 border border-white/10 hidden lg:flex"
             >
               <Phone className="mr-2 h-4 w-4" />
-              07340 041444
+              0330 054 5911
             </Button>
           </a>
-          <a href="https://wa.me/447340041444" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/443300545911" target="_blank" rel="noopener noreferrer">
             <Button className="bg-white text-zinc-950 hover:bg-zinc-100 font-semibold">
               <MessageSquare className="mr-2 h-4 w-4" />
               WhatsApp
@@ -97,13 +97,13 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-white/10">
-                <a href="tel:+447340041444" className="w-full">
+                <a href="tel:+443300545911" className="w-full">
                   <Button variant="outline" className="w-full border-white/10 text-white hover:bg-white/5">
                     <Phone className="mr-2 h-4 w-4" />
                     Call Us Now
                   </Button>
                 </a>
-                <a href="https://wa.me/447340041444" target="_blank" rel="noopener noreferrer" className="w-full">
+                <a href="https://wa.me/443300545911" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button className="w-full bg-white text-zinc-950 font-semibold">
                     <MessageSquare className="mr-2 h-4 w-4" />
                     WhatsApp
