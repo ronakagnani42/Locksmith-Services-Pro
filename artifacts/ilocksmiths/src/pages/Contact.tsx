@@ -98,8 +98,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Call Us (24/7)</h3>
-                  <a href="tel:+447340041444" className="text-2xl text-zinc-300 hover:text-white font-medium transition-colors">
-                    07340 041444
+                  <a href="tel:+443300545911" className="text-2xl text-zinc-300 hover:text-white font-medium transition-colors">
+                    0330 054 5911
                   </a>
                   <p className="text-zinc-500 text-sm mt-1">Average response time: 30 mins</p>
                 </div>
