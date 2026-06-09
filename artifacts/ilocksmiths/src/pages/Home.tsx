@@ -161,17 +161,17 @@ export default function Home() {
               custom={4}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <a href="tel:+447340041444" className="w-full sm:w-auto">
+              <a href="tel:+443300545911" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   className="w-full h-14 px-8 text-base font-bold bg-white text-zinc-950 hover:bg-zinc-100 hover:scale-105 transition-all duration-200 shadow-lg shadow-white/10"
                 >
                   <PhoneCall className="mr-2 h-5 w-5" />
-                  Call 07340 041444
+                  Call 0330 054 5911
                 </Button>
               </a>
               <a
-                href="https://wa.me/447340041444?text=Hi%2C+I+need+a+locksmith+urgently"
+                href="https://wa.me/443300545911?text=Hi%2C+I+need+a+locksmith+urgently"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
@@ -507,17 +507,17 @@ export default function Home() {
               custom={3}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <a href="tel:+447340041444">
+              <a href="tel:+443300545911">
                 <Button
                   size="lg"
                   className="h-16 px-12 text-xl font-bold bg-zinc-950 text-white hover:bg-zinc-800 hover:scale-105 transition-all duration-200 shadow-2xl"
                 >
                   <PhoneCall className="mr-3 h-6 w-6" />
-                  Call Now: 07340 041444
+                  Call Now: 0330 054 5911
                 </Button>
               </a>
               <a
-                href="https://wa.me/447340041444"
+                href="https://wa.me/443300545911"
                 target="_blank"
                 rel="noopener noreferrer"
               >
